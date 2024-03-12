@@ -32,5 +32,9 @@ bool WipeData(Device* device);
 // Returns true on success.
 bool WipeData(Device* device, std::string fs);
 
+int removeDir(RecoveryUI* ui, const std::string path, bool skipParent);
+
+bool WipeDataDir(Device* device, bool skipParent);
+
 // Returns true on success.
 bool WipeSystem(RecoveryUI* ui, const std::function<bool()>& confirm);

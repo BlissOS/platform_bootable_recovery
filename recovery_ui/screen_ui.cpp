@@ -580,26 +580,37 @@ void ScreenRecoveryUI::SetColor(UIElement e) const {
   switch (e) {
     case UIElement::BATTERY_LOW:
       gr_color(0xfd, 0x35, 0x35, 255);
+      break;
     case UIElement::INFO:
       gr_color(0xF6, 0xB9, 0xD6, 255);
+      break;
     case UIElement::HEADER:
       gr_color(0xe1, 0xbd, 0xe7, 255);
+      break;
     case UIElement::MENU:
       gr_color(0xD8, 0xD8, 0xD8, 255); 
+      break;
     case UIElement::MENU_SEL_BG:
       gr_color(0xD8, 0xD8, 0xD8, 255); 
+      break;
     case UIElement::SCROLLBAR:
       gr_color(0xD2, 0xA0, 0xDD, 255);
+      break;
     case UIElement::MENU_SEL_BG_ACTIVE:
       gr_color(0xD8, 0xD8, 0xD8, 255);
+      break;
     case UIElement::MENU_SEL_FG:
       gr_color(0xe1, 0xbd, 0xe7, 255);
+      break;
     case UIElement::LOG:
       gr_color(0xD8, 0xD8, 0xD8, 255);
+      break;
     case UIElement::TEXT_FILL:
       gr_color(0xEE, 0xEE, 0xEE, 255);
+      break;
     default:
       gr_color(0xFF, 0xFF, 0xFF, 255);
+      break;
   }
 }
 
